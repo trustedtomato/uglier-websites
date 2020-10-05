@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+<template id="domain-selector-template">
+  <div class="domain-selector">
+    <div class="domain-info">
+      <label>Domain:
+        <input class="domain-info__name" data-store-name="name">
+      </label>
+      <label>Subdomains too:
+        <input type="checkbox" class="domain-info__subdomains" data-store-name="subdomains">
+      </label>
+    </div>
+    <div class="domain-selector__actions">
+      <button class="domain-selector__delete">Delete</button>
+    </div>
+  </div>
+</template>
+
+<div id="domain-selectors"></div>
+<div id="actions">
+  <button id="add-domain-selector">Add domain selector</button>
+  <button id="save">Save</button>
+</div>
+<div id="status">
+  ✓ Succesfully saved!
+</div>
+
+<script src="script.js"></script>

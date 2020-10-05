@@ -1,0 +1,51 @@
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.domain-selector {
+  margin-top: .5em;
+  margin-bottom: .5em;
+  display: flex;
+}
+
+.domain-info {
+  flex-grow: 1;
+  vertical-align: middle;
+}
+
+label {
+  line-height: 1em;
+}
+
+#actions {
+  margin-top: .5em;
+  display: flex;
+  gap: .5em;
+}
+
+#status {
+  display: none;
+  margin-top: .5em;
+}
+
+#status.saved {
+  display: block;
+  color: green;
+}
+
+#status.saved::before {
+  content: "✓ ";
+}
+
+#status.error {
+  display: block;
+  color: red;
+}
+
+#status.error::before {
+  content: "✗ "
+}
+
+#status.message {
+  display: block;
+}

@@ -11,16 +11,24 @@
     "96": "icons/icon.svg"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://facebook.com/*", "*://*.facebook.com/*", "*://instagram.com/*", "*://*.instagram.com/*"],
-      "js": ["uglify.js"]
-    }
+  "options_ui": {
+    "page": "options/index.html"
+  },
+
+  "permissions": [
+    "storage",
+    "http://*/*",
+    "https://*/*"
   ],
 
-  "browser_action": {
-    "default_icon": "icons/icon.svg",
-    "default_title": "Uglier Websites",
-    "default_popup": "popup/index.html"
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "uglier-websites@trustedtomato.github.io"
+    }
   }
 }
