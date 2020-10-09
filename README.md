@@ -1,6 +1,7 @@
 # Uglier Websites
 Makes given websites uglier.
 
+## Screenshots
 ![Screenshot of the uglified Facebook](https://raw.githubusercontent.com/trustedtomato/uglier-websites/master/screenshots/facebook-small.png)
 ![Screenshot of the uglified Instagram](https://raw.githubusercontent.com/trustedtomato/uglier-websites/master/screenshots/instagram-small.png)
 
