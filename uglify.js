@@ -14,5 +14,7 @@ div.style.top = "20%"
 div.style.left = "0"
 div.style.opacity = "0.6"
 div.style.pointerEvents = "none"
+// "Opera 12.1 supports values up to 2^15-1"
+div.style.zIndex = 32767
 
 document.body.appendChild(div)

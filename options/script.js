@@ -40,7 +40,9 @@ const addDomainSelector = (data) => {
   if (data) {
     for (const input of inputs) {
       const value = data[input.dataset.storeName]
-      setInputValue(input, value)
+      if (value) {
+        setInputValue(input, value)
+      }
     }
   }
 
@@ -79,6 +81,12 @@ $save.addEventListener('click', () => {
         .map(input => [input.dataset.storeName, getInputValue(input)])
     )
   )
+
+  browser.runtime.sendMessage({
+    type: 'updateDomainSelectors',
+    data
+  }).then(console.log)
+
   browser.storage.sync.set({
     domainSelectors: data
   }).then(() => {
