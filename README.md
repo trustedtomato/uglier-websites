@@ -13,3 +13,9 @@ But it's common sense, look at that screenshot, why'd you want to use those thin
 ## Goals
 - Make the given website less pleasant to look at.
 - While not reducing usability.
+
+## Installation
+*Note: Currently only Firefox and Firefox for Android is supported.
+The extension is experimental.*
+
+You can install it here: https://addons.mozilla.org/en-US/firefox/addon/uglier-websites/.
