@@ -19,6 +19,8 @@ const updateDomainSelectors = async (domainSelectors) => {
     ]
   })
 
+  if (matches.length === 0) return;
+
   // (re-)register domain selectors
   registerPromise = browser.contentScripts.register({
     matches,
