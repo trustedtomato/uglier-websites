@@ -1,8 +1,8 @@
 const $domainSelectorTemplate = document.getElementById('domain-selector-template')
 const $domainSelectors = document.getElementById('domain-selectors')
 const $addDomainSelector = document.getElementById('add-domain-selector')
-const $save = document.getElementById('save');
 const $status = document.getElementById('status');
+const $domainSelectorsForm = document.getElementById('domain-selectors-form')
 
 let status = {}
 const setStatus = (newStatus = {}) => {
@@ -71,7 +71,8 @@ browser.storage.sync.get({ domainSelectors: [] }).then(({ domainSelectors }) => 
 })
 
 // initalize saving
-$save.addEventListener('click', () => {
+$domainSelectorsForm.addEventListener('submit', (e) => {
+  e.preventDefault()
   if (status.saved) return
 
   setStatus({ message: 'Saving...' })

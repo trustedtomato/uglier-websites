@@ -5,7 +5,7 @@
   <div class="domain-selector">
     <div class="domain-info">
       <label>Domain:
-        <input class="domain-info__name" data-store-name="name">
+        <input class="domain-info__name" data-store-name="name" pattern="[^*/:]+" required>
       </label>
       <label>Subdomains too:
         <input type="checkbox" class="domain-info__subdomains" data-store-name="subdomains">
@@ -17,13 +17,13 @@
   </div>
 </template>
 
-<div id="domain-selectors"></div>
-<div id="actions">
-  <button id="add-domain-selector">Add domain selector</button>
-  <button id="save">Save</button>
-</div>
-<div id="status">
-  ✓ Succesfully saved!
-</div>
+<form id="domain-selectors-form">
+  <div id="domain-selectors"></div>
+  <div id="actions">
+    <button type="button" id="add-domain-selector">Add domain selector</button>
+    <button type="submit" id="save">Save</button>
+  </div>
+  <div id="status"></div>
+</form>
 
 <script src="script.js"></script>
