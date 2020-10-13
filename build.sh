@@ -1,0 +1,1 @@
+web-ext build --ignore-files "screenshots/"
