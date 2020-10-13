@@ -28,7 +28,8 @@
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "uglier-websites@trustedtomato.github.io"
+      "id": "uglier-websites@trustedtomato.github.io",
+      "strict_min_version": "59.0"
     }
   }
 }
